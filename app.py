@@ -1,30 +1,3 @@
-"""
-╔══════════════════════════════════════════════════════════════════════════════╗
-║          VOID Satellite Intelligence Platform — v7.0                        ║
-║          Next-Generation · 7 Breakthrough Features · Boardroom-Ready        ║
-║                                                                              ║
-║  Built by : Jeevan Kumar                                                     ║
-║  Email    : astroflyerg1@gmail.com                                           ║
-║  Phone    : +91 80721 61639                                                  ║
-║                                                                              ║
-║  Run:  pip install -r requirements.txt                                       ║
-║        cp .env.example .env   # fill your keys                               ║
-║        streamlit run app.py                                                  ║
-║                                                                              ║
-║  Logins:  admin   / VOIDadmin2026!   (change immediately)                    ║
-║           analyst / VOIDanalyst2026! (change immediately)                    ║
-║                                                                              ║
-║  NEW IN v7.0 — 7 Breakthrough Features:                                      ║
-║  🌩️  F1 — Real-time cloud cover prediction per pass window (Open-Meteo)      ║
-║  🤖  F2 — Autonomous AI mission planner (zero human input)                   ║
-║  📡  F3 — Multi-satellite constellation coordination + change detection       ║
-║  🛡️  F4 — Orbital conjunction & debris collision risk monitor                ║
-║  💹  F5 — Live satellite data market intelligence                             ║
-║  🌍  F6 — Population & infrastructure impact scoring (GPW + OSM)             ║
-║  🔮  F7 — Predictive disaster escalation AI (24/48/72h forecast)             ║
-╚══════════════════════════════════════════════════════════════════════════════╝
-"""
-
 import streamlit as st
 import os, time, math, json, base64, hashlib, secrets, sqlite3, logging, re, html, random
 from datetime import datetime, timedelta, timezone
@@ -46,9 +19,7 @@ try:
 except ImportError:
     pass
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 1. CONFIGURATION
-# ══════════════════════════════════════════════════════════════════════════════
+
 APP_VERSION  = "7.0.0"
 BUILD_DATE   = "2026-02"
 APP_NAME     = "VOID Satellite Intelligence"
@@ -5108,4 +5079,5 @@ if role_v == "admin":
                 lines = lf.readlines()[-25:]
                 st.code("".join(lines), language="text")
         except Exception:
+
             st.info("No log file yet.")
