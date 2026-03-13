@@ -18,7 +18,7 @@ It tracks **800+ live satellites**, fetches **10-metre resolution ESA Sentinel-2
 
 | Login | Password |
 |-------|----------|
-| `admin` | `void2024` |
+| `admin` | `VOIDadmin2026!` |
 
 ---
 
