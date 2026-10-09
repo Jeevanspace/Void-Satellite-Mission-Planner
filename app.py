@@ -57,8 +57,8 @@ def inr_short(usd: float) -> str:
 # ── Sentinel Hub credentials (sentinel-hub.com account) ──────────────────────
 # These are Sentinel Hub credentials — auth goes to services.sentinel-hub.com
 # Collection names for Sentinel Hub: S2L2A, S2L1C  (NOT sentinel-2-l2a)
-_DEFAULT_SH_CLIENT_ID     = "3d0bb3d3-52a0-4633-b259-8ab019a23e06"
-_DEFAULT_SH_CLIENT_SECRET = "eOHqSj5TP24I0JyKJQTs3xZpNVFfzo9Y"
+_DEFAULT_SH_CLIENT_ID     = "sh-868759c7-741b-4e9c-987d-c793158ec339"
+_DEFAULT_SH_CLIENT_SECRET = "uSL6axzikjpKnG6RuUIfDGt6m4AJTPcuwDRlB1tQCLBMxolMGaBGWYaTkePezE53PTpoXrzbEkNAoTatDc12mT"
 
 SH_CLIENT_ID     = (os.environ.get("SH_CLIENT_ID")
                     or os.environ.get("SENTINEL_CLIENT_ID")
